@@ -1,0 +1,254 @@
+import { ParticlesContainer } from '../components/LinkParticles';
+import Bleed from "nextra-theme-docs/bleed";
+import { Box, Text, Wrap, Spacer, Flex, Link } from "@chakra-ui/react";
+import { NextLink } from "next/link";
+
+
+
+<Bleed>
+    <Box ml={{base:'0em', xl:'3em'}} mr={{base:'0em', xl:'3em'}} mt="-3em">
+        <ParticlesContainer />
+        <Box pos="absolute" top={{base:"40%", xl:"40%"}} left={{base:"5%", xl:"9%"}} color="white" zIndex={2}>
+            # Pursuing Simplicity
+        </ Box>
+    </Box>
+</ Bleed>
+
+
+## Career Objective
+Lorem Ipsum
+
+
+<Bleed>
+    <Box className="slant" ml={{base:'0em', xl:'3em'}} mr={{base:'0em', xl:'3em'}} sx={{ bg:"#0a2540", padding: "10em 2em 15em 2em"}}>
+        <Text as="div" sx={{color:"#fff"}} >
+            ## Projects
+        </Text>
+    </ Box>
+</ Bleed>
+
+<Box display="flex" position="relative" top={{base:"-3%",xl:"-5%"}} flexWrap="wrap" rowGap="3em">
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white">
+        ### Art&Drawing Society x Puzzle Society team creation discord bot
+        <Box borderTop="1px" pt={5}>
+            Built a discord team creation bot to handle over 100+ users for a collaboration
+            treasure hunt event between UNSW Art and Drawing Society and UNSW Puzzle Society.
+
+            ***Typescript, SQLite, discord.js*** 
+
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="/projects/PortfolioWebsite">
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/puzzadsoc_helper">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Discord google forms verifier
+        <Box borderTop="1px" pt={5}>
+            UNSW student organisation (ARC) told UNSW societies to associate each discord user in our society with their respective student id. 
+
+            Built a discord google forms verifier bot that has handled over 200+ registrations
+            which allowed the executive team to create more events and focus more on their studies
+
+            ***Typescript, SQLite, discord.js, nodemailer, sendgrid*** 
+
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/Discord_google_forms_verifier">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Personal Website Create React App with a Globe
+        <Box borderTop="1px" pt={5}>
+            In iteration 4 of building my portfolio website, I thought it was cool to have a globe in my landing page like stripe so I tried building it. 
+
+            ***Typescript, Reactjs, GlobeReact, Chakra UI*** 
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://shoshinprograms.com">
+                        **More Info**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Erlang json scanner
+        <Box borderTop="1px" pt={5}>
+            Built a json recogniser for erlang. Used to review concepts about compilers. 
+
+            Planning to transition to make a json marshaller for erlang. 
+
+            ***Erlang*** 
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/erlangJsonScanner">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Little Book Of Semaphore Java Examples
+        <Box borderTop="1px" pt={5}>
+            Implemented semaphore patterns in pursuit of performance using concurrency. 
+
+            However, Amdahl's law limits this usecase because the bottlenecks are in the places
+            where synchronisation or single threaded code happens.
+
+            ***Java, Maven*** 
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/LittleBookOfSemaphores-Java-Code-Examples">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Markov Chain Text Generator
+        <Box borderTop="1px" pt={5}>
+           In pursuit of performance and wanting to explore more languages, I used Rust in combination with data oriented design to craft a markovchain text generator that claims to be fast.
+
+           Plan to create benchmarks to make sure of my claims.
+
+            ***Rust*** 
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/MarkovChainTextGenerator">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### SchemeIn48Hrs
+        <Box borderTop="1px" pt={5}>
+            Implemented a Scheme interpreter using Haskell to be more familiar with the Haskell language and understanding the interpreter side of languages after completing a haskell based course in UNSW.
+
+            ***Haskell, Parsec*** 
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/SchemeIn48Hrs">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Raytracing Projects
+        <Box borderTop="1px" pt={5}>
+        Built a raytracer using the raytracing in a weekend book in Rust and Zig to explore the language landscape and to understand how raytracing works.
+
+            ***Rust, Zig*** 
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/RayTracing">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Rust Regex Engine
+        <Box borderTop="1px" pt={5}>
+            Built a regex engine using Data oriented design that produces cache-friendly data structures.
+            This is an exercise on implementing performance focused patterns.
+
+            ***Rust*** 
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/RustRegexEngine">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+        ### Huffman Coding Implementation
+        <Box borderTop="1px" pt={5}>
+        Exploring the code and cryptography space, I found a simple and fun idea called Huffman coding that's amazing at compressing, so I tried implementing it.
+
+        Learned more about what information and entropy is and how huffman coding works.
+
+        ***Python***
+            <Flex>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link>
+                        **More Info**
+                    </Link>
+                </Box>
+                <Box borderRadius="3xl" borderWidth="1px" bg="#0a2540" color="#fff" p={2} m={2}>
+                    <Link href="https://github.com/ShoshinX/comp4121-compression-algo-fun">
+                        **Github**
+                    </Link>
+                </Box>
+            </Flex>
+        </Box>
+    </Box>
+    <Spacer />
+</Box>
+
+## Art showcase
