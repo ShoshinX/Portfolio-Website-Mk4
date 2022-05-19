@@ -2,6 +2,7 @@ import { ParticlesContainer } from '../components/LinkParticles';
 import Bleed from "nextra-theme-docs/bleed";
 import { Box, Text, Wrap, Spacer, Flex, Link } from "@chakra-ui/react";
 import { NextLink } from "next/link";
+import { useTheme } from "next-themes";
 
 
 
@@ -16,7 +17,7 @@ import { NextLink } from "next/link";
 
 
 ## Career Objective
-Lorem Ipsum
+With over 10 personal projects, a curious enthusiastic full-stack software engineer that loves to dig deep, make great documentation, and create non-trivial solutions with the right tools to create a seamless performant user experience. 
 
 
 <Bleed>
@@ -27,8 +28,28 @@ Lorem Ipsum
     </ Box>
 </ Bleed>
 
+export const MyCard = (props) => {
+    const {children} = props;
+    const {theme,setTheme} = useTheme();
+    
+    if (theme === "dark")
+        return(
+            <Box  boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="#111111">
+                {children}
+            </Box>
+        )
+    else
+        return(
+            <Box  boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white">
+                {children}
+            </Box>
+        )
+    
+
+}
+
 <Box display="flex" position="relative" top={{base:"-3%",xl:"-5%"}} flexWrap="wrap" rowGap="3em">
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white">
+    <MyCard>
         ### Art&Drawing Society x Puzzle Society team creation discord bot
         <Box borderTop="1px" pt={5}>
             Built a discord team creation bot to handle over 100+ users for a collaboration
@@ -49,9 +70,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Discord google forms verifier
         <Box borderTop="1px" pt={5}>
             UNSW student organisation (ARC) told UNSW societies to associate each discord user in our society with their respective student id. 
@@ -74,9 +95,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Personal Website Create React App with a Globe
         <Box borderTop="1px" pt={5}>
             In iteration 4 of building my portfolio website, I thought it was cool to have a globe in my landing page like stripe so I tried building it. 
@@ -90,9 +111,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Erlang json scanner
         <Box borderTop="1px" pt={5}>
             Built a json recogniser for erlang. Used to review concepts about compilers. 
@@ -113,9 +134,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Little Book Of Semaphore Java Examples
         <Box borderTop="1px" pt={5}>
             Implemented semaphore patterns in pursuit of performance using concurrency. 
@@ -137,9 +158,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Markov Chain Text Generator
         <Box borderTop="1px" pt={5}>
            In pursuit of performance and wanting to explore more languages, I used Rust in combination with data oriented design to craft a markovchain text generator that claims to be fast.
@@ -160,9 +181,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### SchemeIn48Hrs
         <Box borderTop="1px" pt={5}>
             Implemented a Scheme interpreter using Haskell to be more familiar with the Haskell language and understanding the interpreter side of languages after completing a haskell based course in UNSW.
@@ -181,9 +202,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Raytracing Projects
         <Box borderTop="1px" pt={5}>
         Built a raytracer using the raytracing in a weekend book in Rust and Zig to explore the language landscape and to understand how raytracing works.
@@ -202,9 +223,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Rust Regex Engine
         <Box borderTop="1px" pt={5}>
             Built a regex engine using Data oriented design that produces cache-friendly data structures.
@@ -224,9 +245,9 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
-    <Box boxShadow="lg" borderRadius="lg" borderWidth="1px" w="20em" p={5} bg="white" >
+    <MyCard>
         ### Huffman Coding Implementation
         <Box borderTop="1px" pt={5}>
         Exploring the code and cryptography space, I found a simple and fun idea called Huffman coding that's amazing at compressing, so I tried implementing it.
@@ -247,8 +268,6 @@ Lorem Ipsum
                 </Box>
             </Flex>
         </Box>
-    </Box>
+    </MyCard>
     <Spacer />
 </Box>
-
-## Art showcase

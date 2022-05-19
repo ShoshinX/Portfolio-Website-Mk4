@@ -1,3 +1,12 @@
 {
-  "PortfolioWebsite": "Portfolio Website"
+  "DiscordGoogleFormsVerifier": "Discord Google Forms Verifier",
+  "ErlangJsonScanner": "Erlang Json Scanner",
+  "HuffmanCodingImplementation": "Huffman Coding Implementation",
+  "LittleBookOfSemaphore": "Little Book Of Semaphore",
+  "MarkovChainTextGenerator": "Markov Chain Text Generator",
+  "PersonalWebsiteGlobe": "Personal Website using CRA and Globe Component",
+  "RaytracingProjects": "Ray Tracing Projects",
+  "RustRegexEngine": "Rust Regex Engine",
+  "SchemeIn48Hrs": "Scheme in 48 Hrs",
+  "TeamCreationBot": "Discord Team Creation Bot"
 }

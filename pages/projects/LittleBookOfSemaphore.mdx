@@ -1,0 +1,17 @@
+
+# Little Book Of Semaphore Java Examples
+
+What if all code is horizontally scalable? 
+
+Using this as a starting point, I started looking for the possible patterns of implementing
+concurrency in code. I stumbled on a book called "Little Book Of Semaphores" which claimed
+that it has examples on the major parts of concurrent code.
+
+I also wanted to exercise my Java code skills, and so I implemented the examples from the book
+in Java. However, going through the book, I started to realise that the concurrency problems
+it shows from the middle of the book to the end started to become obtuse and harder to find
+concrete examples of in the current software engineering landscape. This led me to stop implementing the examples from the middle of the book onwards.
+
+In addition, I also started to realise that there will be an inevitability of code that's being run to reach a single threaded part and by amdahl's law, the bottleneck of the software will be in the single threaded part, usually when we're synchronising.
+
+In conclusion, this was an amazing project to work on because I've seen common examples on how to implement concurrent code, how common concurrency abstractions are created and that the single threaded part of the code will always be the bottleneck by amdahl's law.

@@ -1,0 +1,22 @@
+
+
+# UNSW Art & Drawing Society Discord Google Forms Verifier
+
+When I was working as the Treasurer for UNSW ArtnDrawing Society, the executive team was 
+given a directive from the UNSW student organisation (ARC) to verify the members of the official
+discord server with their real life counterparts.
+
+We then started to manually inform our new members to sign up to the google forms with their discord id and zid. When O-week happened, we realised that the manual verification load was
+interfering with our workflow. Therefore, I was tasked with creating a bot that automatically does the verification.
+
+This was an interesting problem because of a few reasons:
+- When a user is a unsw student, I can send a verification email to their university email using their zid
+- When a user is not a unsw student, I can either use their phone number to verify or hand over the responsibility to the exec team.
+
+One thing that I had to remember was that we are a university society and that we will eventually meet up with our members, so the bot is not supposed to be strictess.
+
+There were a couple of options for sending an email verification like MailChimp, sendgrid, Amazon SES, Google firebase. I opted for sendgrid since I saw minecraft society using it in their github repo. The integration was seamless at first, handingling over 300+ signups, until three months later, there were problems popping up such as emails were not being received and the emails were going into the spam folder.
+
+As a result, I had chosen to terminate the bot at the end of my term, since maintaining it would be costly for the new exec team, and that no one in the new exec team has any coding experience.
+
+In conclusion, this was a fun project to work on as I had real clients with real objectives being made, and that I was having a positive effect on the workflow of the ArtnDrawing Society.
